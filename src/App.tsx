@@ -1,5 +1,5 @@
 import ESLogo from './data/icons/logo.png'
-import './App.css'
+import GlobalStyle from './style/global'
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         </a>
       </div>
       <h1>ES Acessórios</h1>
+      <GlobalStyle/>
     </>
   )
 }

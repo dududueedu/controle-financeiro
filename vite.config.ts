@@ -9,6 +9,6 @@ export default defineConfig({
     alias: [{
       find: '@components',
       replacement: path.resolve(__dirname, './src/components')
-    }];
+    }]
   }
 })
