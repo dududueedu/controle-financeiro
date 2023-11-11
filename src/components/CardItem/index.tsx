@@ -1,10 +1,11 @@
 import * as S from './style';
 
-const CardItem = () => {
+const CardItem = ({title, Icon}: {title: string; Icon: string}) => {
     return ( 
         <S.CardItemC>
             <S.Header>
-                <S.HeaderTitle>TEST</S.HeaderTitle>
+                <S.HeaderTitle>{title}</S.HeaderTitle>
+                <Icon/>
             </S.Header>
 
             <S.Total>
