@@ -30,10 +30,10 @@ export const CardItemC = styled.div`
 export const Header = styled.header`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     gap: 10px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
 
     svg {
         width: 25px;
