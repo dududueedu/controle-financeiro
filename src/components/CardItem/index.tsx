@@ -1,6 +1,6 @@
 import * as S from './style';
 
-const CardItem = ({title, Icon, value}: {title: string; Icon: string; value: number}) => {
+const CardItem = ({title, Icon, value, color}: {title: string; Icon: string; value: number; color: string}) => {
     return ( 
         <S.CardItemC>
             <S.Header>
@@ -8,9 +8,21 @@ const CardItem = ({title, Icon, value}: {title: string; Icon: string; value: num
                 <Icon/>
             </S.Header>
 
-            <S.Total>
-                {value}
-            </S.Total>
+            {color == 'green' &&             
+                <S.TotalInput>
+                    {value}
+                </S.TotalInput>
+            }
+            {color == 'red' &&             
+                <S.TotalOutput>
+                    {value}
+                </S.TotalOutput>
+            }
+            {color == 'black' &&             
+                <S.Total>
+                    {value}
+                </S.Total>
+            }
         </S.CardItemC>
     );
 }

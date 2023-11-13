@@ -49,3 +49,15 @@ export const Total = styled.p`
     font-size: 30px;
     font-weight: bold;
 `;
+
+export const TotalInput = styled.p`
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+`;
+
+export const TotalOutput = styled.p`
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+`;

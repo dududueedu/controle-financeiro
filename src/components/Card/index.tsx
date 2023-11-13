@@ -5,9 +5,9 @@ import { FaRegArrowAltCircleUp, FaRegArrowAltCircleDown, FaDollarSign } from 're
 const Card = () => {
     return ( 
         <S.CardContainer>
-            <CardItem title="ENTRADAS" Icon={FaRegArrowAltCircleUp} value={1200}/>
-            <CardItem title="SAÍDAS" Icon={FaRegArrowAltCircleDown} value={1200}/>
-            <CardItem title="TOTAL" Icon={FaDollarSign} value={1200}/>
+            <CardItem title="ENTRADAS" Icon={FaRegArrowAltCircleUp} value={1200} color="green"/>
+            <CardItem title="SAÍDAS" Icon={FaRegArrowAltCircleDown} value={1200} color="red"/>
+            <CardItem title="TOTAL" Icon={FaDollarSign} value={1200} color="black"/>
         </S.CardContainer>
     );
 }
