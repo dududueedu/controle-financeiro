@@ -1,7 +1,8 @@
+import Table from "@components/Table";
 import * as S from "./style";
 import {useState} from 'react'
 
-const Form = ( { handAddFree } : {handAddFree: any}) => {
+const Form = ( { handAddFree, transListForm, setTransactions } : {handAddFree: any; transListForm: any, setTransactions: any}) => {
 
   const [desc, setDesc] = useState(String)
   const [amount, setAmount] = useState(String)
@@ -54,6 +55,7 @@ const Form = ( { handAddFree } : {handAddFree: any}) => {
 
         <S.Button onClick={handleSave}> ADICIONAR </S.Button>
       </S.Container>
+      <Table itens={transListForm} setItens={setTransactions}></Table>
     </>
   )
 }

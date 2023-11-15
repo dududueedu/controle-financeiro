@@ -44,7 +44,7 @@ function App() {
     <>
       <Header/>
       <Card input={input} output={output} total={total}/>
-      <Form handAddFree={handAdd}/>
+      <Form handAddFree={handAdd} transListForm={transList} setTransactions={setTransactions}/>
       <GlobalStyle/>
     </>
   )
