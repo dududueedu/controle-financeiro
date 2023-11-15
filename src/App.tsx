@@ -15,11 +15,11 @@ function App() {
     const amountOutput = transList
       .filter((data: any) => data.output)
       .map((transaction: any) => Number(transaction.amount))
-      console.log("out: ", amountOutput)
+
     const amountInput = transList
       .filter((data: any) => !data.output)
       .map((transaction: any) => Number(transaction.amount))
-      console.log("inp: ", amountInput)
+
     const output = amountOutput.reduce((acc: any, cur: any) => acc + cur, 0)
     const input = amountInput.reduce((acc: any, cur: any) => acc + cur, 0)
 
@@ -34,7 +34,7 @@ function App() {
 
   const handAdd = ( transaction:any ) => {
     const newArray = [...transList, transaction]
-    console.log("newArray:", newArray)
+
     setTransactions(newArray)
 
     localStorage.setItem("transactions", JSON.stringify(newArray))
