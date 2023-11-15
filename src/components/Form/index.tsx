@@ -1,19 +1,34 @@
 import * as S from "./style";
 import {useState} from 'react'
 
-const Form = () => {
+const Form = ( { handAddFree } : {handAddFree: any}) => {
 
   const [desc, setDesc] = useState(String)
   const [amount, setAmount] = useState(String)
   const [isExpense, setExpense] = useState(Boolean)
 
+  const createID = () => Math.round(Math.random() * 2000)
+
   const handleSave = () => {
-    if(!desc || amount) {
+    const amountFormat = parseFloat(amount)
+    if(!desc || !amount) {
       alert('Informe a descrição e o valor')
       return;
-    }else{
+    }else if(amountFormat < 0){
       alert('O valor deve ser positivo')
     }
+
+    const transaction = {
+      id: createID(),
+      desc: desc,
+      amount: amount,
+      output: isExpense
+    }
+
+    handAddFree(transaction)
+
+    setDesc("")
+    setAmount("")
   }
 
   return (

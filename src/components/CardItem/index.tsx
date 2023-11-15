@@ -10,17 +10,17 @@ const CardItem = ({title, Icon, value, color}: {title: string; Icon: string; val
 
             {color == 'green' &&             
                 <S.TotalInput>
-                    {value}
+                    R$ {value}
                 </S.TotalInput>
             }
             {color == 'red' &&             
                 <S.TotalOutput>
-                    {value}
+                    R$ {value}
                 </S.TotalOutput>
             }
             {color == 'black' &&             
                 <S.Total>
-                    {value}
+                    R$ {value}
                 </S.Total>
             }
         </S.CardItemC>
