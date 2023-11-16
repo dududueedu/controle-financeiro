@@ -1,13 +1,53 @@
 import TableItem from '../TableItem'
 import * as S from './style'
+import Swa from 'sweetalert2'
+import think from '../../data/icons/thinking.png'
+import accept from '../../data/icons/accept.png'
 
 const Table = ({itens, setItens}: {itens: any, setItens: any}) => {
 
     const onDeleteFunc = (ID: number) => {
-        const newArray = itens.filter((transaction : any) => transaction.id !== ID)
-        setItens(newArray)
 
-        localStorage.setItem("transactions", JSON.stringify(newArray))
+        Swa.fire({
+            imageUrl: think,
+            imageWidth: 50,
+            imageHeight: 50,
+            color: '#000',
+            title: 'Tem certeza que deseja apagar?',
+            confirmButtonColor: 'teal',
+            showCancelButton: true,
+            confirmButtonText: 'Sim'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const newArray = itens.filter((transaction : any) => transaction.id !== ID)
+                setItens(newArray)
+        
+                localStorage.setItem("transactions", JSON.stringify(newArray))
+
+                Swa.fire({
+                    imageUrl: accept,
+                    imageWidth: 50,
+                    imageHeight: 50,
+                    color: '#000',
+                    text: 'O Registro foi excluído!',
+                    confirmButtonColor: 'teal',
+                    showCancelButton: false,
+                    confirmButtonText: 'Ok!',
+                })
+            }else{
+                Swa.fire({
+                    imageUrl: accept,
+                    imageWidth: 50,
+                    imageHeight: 50,
+                    color: '#000',
+                    text: 'O Registro permanecerá.',
+                    confirmButtonColor: 'teal',
+                    showCancelButton: false,
+                    confirmButtonText: 'Ok!',
+                })
+            }
+        });
+
     }
 
   return (
