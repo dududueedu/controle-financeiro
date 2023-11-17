@@ -32,6 +32,7 @@ export const Input = styled.input`
     padding: 5px 10px;
     font-size: 20px;
     border: 2px solid #ccc;
+    cursor: pointer;
 `
 
 export const RadioGroup = styled.div`
