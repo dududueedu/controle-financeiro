@@ -19,7 +19,9 @@ const TableItem = ({item, onDelete} : {item: any; onDelete: any}) => {
         )}
       </S.Td>
       <S.Td>
-        <FaTrash onClick={() => onDelete(item.id)}/>
+        <S.deleteDiv>
+          <FaTrash onClick={() => onDelete(item.id)}/>
+        </S.deleteDiv>
       </S.Td>
     </S.Tr>
   )

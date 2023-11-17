@@ -14,3 +14,7 @@ export const Td = styled.td`
 `
 
 export const Tr = styled.tr``
+
+export const deleteDiv = styled.div`
+    cursor: pointer;
+`
