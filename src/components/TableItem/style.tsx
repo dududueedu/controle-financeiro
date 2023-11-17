@@ -18,3 +18,18 @@ export const Tr = styled.tr``
 export const deleteDiv = styled.div`
     cursor: pointer;
 `
+
+export const TdSon = styled.div`
+    margin-left: 0px;
+    margin-right: 150px;
+`
+
+export const TdSonII = styled.div`
+    margin-left: 0px;
+    margin-right: 300px;
+`
+
+export const TdSonIII = styled.div`
+    margin-left: 0px;
+    margin-right: 320px;
+`

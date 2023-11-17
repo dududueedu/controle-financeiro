@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Table = styled.table`
+    table-layout: fixed;
     width: 100%;
     background-color: #fff;
     padding: 20px;
@@ -11,6 +12,10 @@ export const Table = styled.table`
 `
 export const Thead = styled.thead``
 export const Tbody = styled.tbody`
+    display: block;
+    width: 1075px;
+    overflow: auto;
+    height: 170px;
 `
 export const Tr = styled.tr``
 
