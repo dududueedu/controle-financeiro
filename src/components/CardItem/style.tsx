@@ -6,8 +6,9 @@ export const CardItemC = styled.div`
     align-items: center;
     background-color: #fff;
     border-radius: 20px;
-    padding: 20px 5px;
+    padding: 15px 5px;
     width: 30%;
+    box-shadow: 0px 0px 5px #CCC;
     color: #000;
 
     @media(max-width: 750px){

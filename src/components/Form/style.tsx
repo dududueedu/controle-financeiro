@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
 
     max-width: 1120px;
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     width: 100%;
     background-color: #fff;
     box-shadow: 0px 0px 5px #CCC;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     display: flex;
     justify-content: space-around;
     padding: 20px 0px;
