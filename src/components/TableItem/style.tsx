@@ -21,7 +21,7 @@ export const deleteDiv = styled.div`
 
 export const TdSon = styled.div`
     margin-left: 0px;
-    margin-right: 150px;
+    margin-right: 250px;
 `
 
 export const TdSonII = styled.div`
