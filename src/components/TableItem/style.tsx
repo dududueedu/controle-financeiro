@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Td = styled.td`
     color: black;
     padding-top: 20px;
-    text-align: ${(props) => (props.align ? "center" : "start")};
+    text-align: start;
     word-break: break-all;
 
 
@@ -17,19 +17,4 @@ export const Tr = styled.tr``
 
 export const deleteDiv = styled.div`
     cursor: pointer;
-`
-
-export const TdSon = styled.div`
-    margin-left: 0px;
-    margin-right: 250px;
-`
-
-export const TdSonII = styled.div`
-    margin-left: 0px;
-    margin-right: 300px;
-`
-
-export const TdSonIII = styled.div`
-    margin-left: 0px;
-    margin-right: 320px;
 `

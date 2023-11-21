@@ -12,17 +12,20 @@ export const Table = styled.table`
 `
 export const Thead = styled.thead``
 export const Tbody = styled.tbody`
-    display: block;
     width: 1075px;
     overflow: auto;
     height: 200px;
 `
 export const Tr = styled.tr``
 
-export const Th = styled.th`
+interface Props {
+    width: Number;
+}
+
+export const Th = styled.th<Props>`
     color: black;
     border-bottom: inset;
     padding-bottom: 5px;
     text-align: start;
-    width: ${(props) => (props.width ? props.width + "%" : "auto")};
+    width: ${(p : Props) => p.width ? p.width + "%" : "auto"};
 `

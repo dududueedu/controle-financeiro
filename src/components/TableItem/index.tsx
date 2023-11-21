@@ -6,23 +6,17 @@ const TableItem = ({item, onDelete} : {item: any; onDelete: any}) => {
   return (
     <S.Tr>
       <S.Td>
-        <S.TdSon>
           {item.desc}
-        </S.TdSon>
       </S.Td>
       <S.Td>
-        <S.TdSonII>
           {item.amount}
-        </S.TdSonII>
       </S.Td>
       <S.Td>
-        <S.TdSonIII>
           {item.output ? (
             <FaRegArrowAltCircleDown color="red" />
           ) : (
             <FaRegArrowAltCircleUp color="green"/>
           )}
-        </S.TdSonIII>
       </S.Td>
       <S.Td>
         <S.deleteDiv>
