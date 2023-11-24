@@ -1,27 +1,26 @@
-# React + TypeScript + Vite
+## Technologies: React + TypeScript + Vite
+<div align="center">
+   <h2> :moneybag: Controle-financeiro </h2>
+   <span> Este é projeto pessoal onde desenvolvi uma espécie de controle de caixa para meu negócio (minha loja de Acessórios). </span>
+   </br>
+   <a href="https://esfinance.netlify.app"><i> Link demo </i></a>
+   </br></br>
+<p>
+  <!-- Image Shields -->
+  <img alt="Languages Count" src="https://img.shields.io/github/languages/count/dududueedu/controle-financeiro">
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/dududueedu/controle-financeiro">
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/dududueedu/controle-financeiro">
+</p>
+</div></br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<span> Figura 1 - Adicionar itens </span></br>
+<img  width="75%"  src="https://imgur.com/RDYWX4V.png"></br></br>
+<span> Figura 2 - Excluir item </span></br>
+<img  width="75%"  src="https://imgur.com/ZuA89a6.png"></br></br>
+<span> Figura 3 - Listar itens </span></br>
+<img  width="75%"  src="https://imgur.com/4rADjFV.png"></br>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<!--![Image](https://i.imgur.com/30sx8Yt.png)-->
+<div align="center">
+  <p><i>Developed by <a href="https://www.linkedin.com/in/dududueedu/">Eduardo Silva</i></p>
+</div>
