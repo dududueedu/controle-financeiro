@@ -1,9 +1,9 @@
 ## Technologies: React + TypeScript + Vite
 <div align="center">
    <h2> :moneybag: Controle-financeiro </h2>
-   <span> Este é projeto pessoal onde desenvolvi uma espécie de controle de caixa para meu negócio (minha loja de Acessórios). </span>
+   <span> Este é um projeto pessoal onde desenvolvi uma espécie de controle de caixa para meu negócio (minha loja de Acessórios). </span>
    </br>
-   <a href="https://esfinance.netlify.app"><i> Link demo </i></a>
+   <a href="https://esfinance.netlify.app" target="_blank"><i> Link demo </i></a>
    </br></br>
 <p>
   <!-- Image Shields -->
