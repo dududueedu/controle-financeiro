@@ -23,7 +23,7 @@ function App() {
     const output = amountOutput.reduce((acc: any, cur: any) => acc + cur, 0)
     const input = amountInput.reduce((acc: any, cur: any) => acc + cur, 0)
 
-    const total = Math.abs(input - output).toFixed(2)
+    const total = (input - output).toFixed(2)
     const totalFormat = parseFloat(total)
 
     setInput(input)
