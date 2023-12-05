@@ -1,6 +1,7 @@
 import Table from "@components/Table";
 import * as S from "./style";
 import {useState} from 'react'
+import Swa from 'sweetalert2'
 
 const Form = ( { handAddFree, transListForm, setTransactions } : {handAddFree: any; transListForm: any, setTransactions: any}) => {
 
@@ -32,6 +33,40 @@ const Form = ( { handAddFree, transListForm, setTransactions } : {handAddFree: a
     setAmount("")
   }
 
+  const deleteAll = () => {
+    if(transListForm == ''){
+      Swa.fire({
+        icon: "error",
+        text: "Lista vazia, impossível apagar.",
+        showConfirmButton: false,
+        timer: 1700
+      })
+    }else{
+      Swa.fire({
+        icon: 'question',
+        color: '#000',
+        text: 'Tem certeza que deseja apagar todos os itens?',
+        confirmButtonColor: 'teal',
+        showCancelButton: true,
+        confirmButtonText: 'Sim'
+      }).then((result) => {
+        if (result.isConfirmed) {
+              localStorage.clear()
+              window.location.href = "/"
+        }else{
+            Swa.fire({
+                icon: 'success',
+                color: '#000',
+                text: 'Os registros permaneceram.',
+                confirmButtonColor: 'teal',
+                showCancelButton: false,
+                confirmButtonText: 'Ok!',
+            })
+        }
+      });
+    }
+  }
+
   return (
     <>
       <S.Container>
@@ -54,6 +89,7 @@ const Form = ( { handAddFree, transListForm, setTransactions } : {handAddFree: a
         </S.RadioGroup>
 
         <S.Button onClick={handleSave}> ADICIONAR </S.Button>
+        <S.Button onClick={deleteAll}> APAGAR TODOS </S.Button>
       </S.Container>
       <Table itens={transListForm} setItens={setTransactions}></Table>
     </>
