@@ -14,10 +14,27 @@ const Form = ( { handAddFree, transListForm, setTransactions } : {handAddFree: a
   const handleSave = () => {
     const amountFormat = parseFloat(amount)
     if(!desc || !amount) {
-      alert('Informe a descrição e o valor')
-      return;
+      Swa.fire({
+        icon: 'error',
+        color: '#000',
+        text: 'Todos os campos devem ser preenchidos.',
+        confirmButtonColor: 'teal',
+        showCancelButton: false,
+        showConfirmButton: false,
+        timer: 2000
+      })
+      return; 
     }else if(amountFormat < 0){
-      alert('O valor deve ser positivo')
+      Swa.fire({
+        icon: 'error',
+        color: '#000',
+        text: 'O valor deve ser positivo. Caso queira cadastrar uma despesa ou prejuízo, marque a opção "SAÍDA".',
+        confirmButtonColor: 'teal',
+        showCancelButton: false,        
+        showConfirmButton: false,
+        timer: 5000
+      })
+      return;
     }
 
     const transaction = {
